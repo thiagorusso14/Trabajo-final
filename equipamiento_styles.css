@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Geometric Slab Serif 712';
+    src: url('GeometricSlabserif712-Medium.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geometric Slab Serif 712', Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+
+.header { background: linear-gradient(135deg, #5c2a3e, #7a3e55); color: #ffffff; padding: 20px; text-align: center; }
+    
+.header h1 { font-size: 28px; font-weight: bold; }
+    
+nav { background-color: #000000; padding: 10px; }
+    
+nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; }
+    
+nav ul li a { text-decoration: none; color: #ffffff; font-weight: bold; transition: color 0.3s ease; }
+    
+nav ul li a:hover { color: #5c2a3e; }
+    
+main { flex: 1; padding: 20px; max-width: 1200px; margin: 0 auto; }
+    
+.products-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    
+.product-card {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    min-height: 400px; /* Asegúrate de que tenga espacio suficiente */
+    padding: 20px; /* Espacio interno para evitar que los bordes toquen el contenido */
+    text-align: center;
+    position: relative;
+}
+    
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Asegura que la imagen mantenga proporción */
+    margin-top: 10px; /* Espacio entre la imagen y el borde superior */
+    margin-bottom: 10px; /* Espacio entre la imagen y el borde inferior */
+}
+    
+.product-card h3 { font-size: 18px; color: #5c2a3e; margin-bottom: 10px; }
+    
+.product-card .price { font-size: 16px; margin-bottom: 15px; }
+    
+.product-card .price .before { text-decoration: line-through; color: #888; }
+    
+.product-card .price .now { color: #5c2a3e; font-weight: bold; }
+    
+.product-card .discount { position: absolute; top: 10px; left: 10px; background-color: #ffcccc; color: #5c2a3e; font-size: 12px; font-weight: bold; padding: 5px 10px; border-radius: 5px; }
+    
+.product-card .buy-button { display: inline-block; background-color: #5c2a3e; color: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease; }
+    
+.product-card .buy-button:hover { background-color: #7a3e55; }
+    
+
+
+footer {
+    background-color: #5c2a3e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Empuja el footer al final */
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer .social-links a:hover {
+    color: #d9a5b3;
+}

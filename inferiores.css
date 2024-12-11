@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Geometric Slab Serif 712';
+    src: url('GeometricSlabserif712-Medium.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geometric Slab Serif 712', Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido y el footer estén en columnas */
+    min-height: 100vh; /* Altura mínima de toda la ventana */
+    margin: 0;
+}
+
+.header {
+    background-color: #5c2a3e;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+main {
+    flex: 1; /* Esto hace que el contenido ocupe el espacio restante */
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #5c2a3e;
+}
+
+.players-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background-color: #5c2a3e;
+    border: 2px solid #5c2a3e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+
+.player-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Mantiene las proporciones y rellena el contenedor */
+    object-position: top; /* Muestra la parte superior de la imagen */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.player-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.player-card p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #5c2a3e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Empuja el footer al final */
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer .social-links a:hover {
+    color: #d9a5b3;
+}
