@@ -1,0 +1,225 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #5082b4, #bdd4ee);
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+.navbar {
+  background: linear-gradient(135deg, #27394b, #011327);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; 
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #9fc5f1;
+}
+header {
+  color: white;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 50px;
+  height: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  font-family: monospace;
+  color: #001838;
+}
+
+/* Sección de Partidos */
+#fixtures {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  font-family: monospace;
+}
+
+#fixtures h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #0052a3;
+  margin-bottom: 20px;
+}
+
+.fixture {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.fixture:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fixture-date, .fixture-league {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.fixture-time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+.fixture-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 10px;
+}
+
+.fixture-teams span {
+  flex: 1;
+  text-align: center; 
+  font-size: 1em; 
+  font-weight: bold; 
+  color: #333; 
+}
+
+.fixture-teams img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain; 
+  display: block;
+}
+
+.home-team {
+  color: #0052a3;
+  font-weight: bold;
+}
+
+.away-team {
+  color: #e94e77;
+  font-weight: bold;
+}
+
+.fixture-teams span {
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fixture {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+footer {
+  background: linear-gradient(135deg, #021e3a, #9fc5f1);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: auto;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .fixture {
+    padding: 10px;
+  }
+
+  .fixture-teams {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fixture-date, .fixture-league, .fixture-time {
+    text-align: center;
+  }
+}
+#filters {
+  text-align: center;
+}
+
+#location-filter {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #0052a3;
+}
+
+/* Estilos para las estadísticas históricas */
+.historical-stats {
+  display: none;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.showing .historical-stats {
+  display: block;
+}
+
+.show-stats-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  border: none;
+  background: #0052a3;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-stats-btn:hover {
+  background: #003f82;
+}

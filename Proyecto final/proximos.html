@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Próximos Partidos</title>
+  <link rel="stylesheet" href="proximos.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proximos.html">Próximos Partidos</a></li>
+    </ul>
+  </nav>
+      
+  <header>
+    <div class="header-container">
+      <img src="images/crest.png" alt="Logo del Manchester City" class="header-logo">
+      <h1>Manchester City</h1>
+    </div>
+  </header>
+  
+  <!-- Filtro de partidos -->
+  <section id="filters">
+    <h2>Filtrar Partidos</h2>
+    <select id="location-filter">
+      <option value="all">Todos los Partidos</option>
+      <option value="local">Partidos de Local</option>
+      <option value="visitante">Partidos de Visitante</option>
+    </select>
+  </section>
+
+  <!-- Lista de partidos -->
+  <section id="fixtures">
+    <div class="fixture">
+      <div class="fixture-date">Dom 15 Dic</div>
+      <div class="fixture-league">Premier League</div>
+      <div class="fixture-teams">
+        <span class="home-team">Manchester City</span>
+        <img src="images/manchester_city_fc_badge.webp" alt="Logo de Manchester City">
+        <span class="fixture-time">13:30</span>
+        <img src="images/manunited.webp" alt="Logo de Manchester United">
+        <span class="away-team">Manchester United</span>
+      </div>
+      <button class="show-stats-btn">Ver estadísticas históricas</button>
+      <div class="historical-stats">
+        <h3>Historial vs Manchester United</h3>
+        <ul>
+          <li>Partidos jugados: 180</li>
+          <li>Victorias del Manchester City: 55</li>
+          <li>Empates: 50</li>
+          <li>Victorias del Manchester United: 75</li>
+          <li>Último encuentro: City 2 - 1 United (21/05/2024)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fixture">
+      <div class="fixture-date">Sáb 21 Dic</div>
+      <div class="fixture-league">Premier League</div>
+      <div class="fixture-teams">
+        <span class="home-team">Aston Villa</span>
+        <img src="images/a-villa-new-full.webp" alt="Logo de Aston Villa">
+        <span class="fixture-time">09:30</span>
+        <img src="images/crest.png" alt="Logo de Manchester City">
+        <span class="away-team">Manchester City</span>
+      </div>
+      <button class="show-stats-btn">Ver estadísticas históricas</button>
+      <div class="historical-stats">
+        <h3>Historial vs Aston Villa</h3>
+        <ul>
+          <li>Partidos jugados: 120</li>
+          <li>Victorias del Manchester City: 60</li>
+          <li>Empates: 30</li>
+          <li>Victorias del Aston Villa: 30</li>
+          <li>Último encuentro: City 3 - 0 Villa (10/03/2024)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fixture">
+      <div class="fixture-date">Jue 26 Dic</div>
+      <div class="fixture-league">Premier League</div>
+      <div class="fixture-teams">
+        <span class="home-team">Manchester City</span>
+        <img src="images/crest.png" alt="Logo de Manchester City">
+        <span class="fixture-time">09:30</span>
+        <img src="images/everton.webp" alt="Logo de Everton">
+        <span class="away-team">Everton</span>
+      </div>
+      <button class="show-stats-btn">Ver estadísticas históricas</button>
+      <div class="historical-stats">
+        <h3>Historial vs Everton</h3>
+        <ul>
+          <li>Partidos jugados: 180</li>
+          <li>Victorias del Manchester City: 70</li>
+          <li>Empates: 50</li>
+          <li>Victorias del Everton: 60</li>
+          <li>Último encuentro: City 2 - 0 Everton (14/04/2024)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fixture">
+      <div class="fixture-date">Dom 29 Dic</div>
+      <div class="fixture-league">Premier League</div>
+      <div class="fixture-teams">
+        <span class="home-team">Leicester City</span>
+        <img src="images/leicester.webp" alt="Logo de Leicester City">
+        <span class="fixture-time">11:30</span>
+        <img src="images/manchester_city_fc_badge.webp" alt="Logo de Manchester City">
+        <span class="away-team">Manchester City</span>
+      </div>
+      <button class="show-stats-btn">Ver estadísticas históricas</button>
+      <div class="historical-stats">
+        <h3>Historial vs Leicester City</h3>
+        <ul>
+          <li>Partidos jugados: 90</li>
+          <li>Victorias del Manchester City: 40</li>
+          <li>Empates: 20</li>
+          <li>Victorias del Leicester City: 30</li>
+          <li>Último encuentro: Leicester 1 - 1 City (01/02/2024)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fixture">
+      <div class="fixture-date">Sáb 04 Ene</div>
+      <div class="fixture-league">Premier League</div>
+      <div class="fixture-teams">
+        <span class="home-team">Manchester City</span>
+        <img src="images/manchester_city_fc_badge.webp" alt="Logo de Manchester City">
+        <span class="fixture-time">12:00</span>
+        <img src="images/west_ham_united.webp" alt="Logo de West Ham">
+        <span class="away-team">West Ham</span>
+      </div>
+      <button class="show-stats-btn">Ver estadísticas históricas</button>
+      <div class="historical-stats">
+        <h3>Historial vs West Ham</h3>
+        <ul>
+          <li>Partidos jugados: 140</li>
+          <li>Victorias del Manchester City: 65</li>
+          <li>Empates: 40</li>
+          <li>Victorias del West Ham: 35</li>
+          <li>Último encuentro: City 3 - 1 West Ham (10/05/2024)</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Manchester City</p>
+  </footer>
+  <script src="prueba.js"></script>
+</body>
+</html>
